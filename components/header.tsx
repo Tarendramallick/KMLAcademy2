@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <>
       {/* Main Header */}
-      <header className="bg-gradient-to-r from-blue-700 to-blue-800 text-white sticky top-0 z-50">
+      <header className="bg-gradient-to-r from-sky-600 to-blue-700 text-white sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center gap-3">
@@ -36,7 +36,7 @@ export default function Header() {
             <button className="border-2 border-white text-white px-4 py-2 rounded hover:bg-white hover:text-blue-700 transition font-semibold">
               REQUEST INFO
             </button>
-            <button className="p-2 hover:bg-blue-600 rounded transition">
+            <button className="p-2 hover:bg-blue-600/60 rounded transition">
               <Search size={20} />
             </button>
           </nav>
@@ -44,7 +44,7 @@ export default function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden p-2 hover:bg-blue-600 rounded transition"
+            className="lg:hidden p-2 hover:bg-blue-600/60 rounded transition"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -52,7 +52,7 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="lg:hidden bg-blue-800 border-t border-blue-600">
+          <div className="lg:hidden bg-blue-700/90 border-t border-blue-500">
             <nav className="flex flex-col gap-4 p-4">
               <a href="#" className="text-white hover:text-blue-100 transition">
                 Quicklinks
@@ -71,7 +71,7 @@ export default function Header() {
         )}
 
         {/* Secondary Navigation */}
-        <nav className="hidden lg:flex bg-blue-600 justify-center gap-12 py-3 border-t border-blue-500">
+        <nav className="hidden lg:flex bg-blue-500 justify-center gap-12 py-3 border-t border-blue-400">
           <a href="#" className="text-white hover:text-blue-100 transition font-semibold">
             About
           </a>

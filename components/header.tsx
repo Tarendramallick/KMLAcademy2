@@ -8,8 +8,8 @@ export default function Header() {
 
   return (
     <>
-      {/* Main Header (Navy Blue) */}
-      <header className="bg-blue-900 text-white sticky top-0 z-50 shadow-md">
+      {/* Main Header (Dark Blue like Admissions buttons) */}
+      <header className="bg-blue-600 text-white sticky top-0 z-50 shadow-md">
         <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
           
           {/* Logo */}
@@ -19,7 +19,7 @@ export default function Header() {
             </div>
             <div className="hidden sm:block">
               <h1 className="text-2xl font-bold">KMLAcademy</h1>
-              <p className="text-xs text-blue-200">Excellence in Education</p>
+              <p className="text-xs text-blue-100">Excellence in Education</p>
             </div>
           </div>
 
@@ -34,10 +34,12 @@ export default function Header() {
             <a href="#" className="text-white hover:text-blue-200 transition">
               Giving
             </a>
-            <button className="border-2 border-white text-white px-4 py-2 rounded hover:bg-white hover:text-blue-900 transition font-semibold">
+
+            <button className="border-2 border-white text-white px-4 py-2 rounded hover:bg-white hover:text-blue-600 transition font-semibold">
               REQUEST INFO
             </button>
-            <button className="p-2 hover:bg-blue-800 rounded transition">
+
+            <button className="p-2 hover:bg-blue-700/50 rounded transition">
               <Search size={20} />
             </button>
           </nav>
@@ -45,7 +47,7 @@ export default function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden p-2 hover:bg-blue-800 rounded transition"
+            className="lg:hidden p-2 hover:bg-blue-700/50 rounded transition"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -53,7 +55,7 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="lg:hidden bg-blue-900 border-t border-blue-700">
+          <div className="lg:hidden bg-blue-600 border-t border-blue-500">
             <nav className="flex flex-col gap-4 p-4">
               <a href="#" className="text-white hover:text-blue-200 transition">
                 Quicklinks
@@ -64,15 +66,16 @@ export default function Header() {
               <a href="#" className="text-white hover:text-blue-200 transition">
                 Giving
               </a>
-              <button className="border-2 border-white text-white px-4 py-2 rounded hover:bg-white hover:text-blue-900 transition font-semibold w-full">
+
+              <button className="border-2 border-white text-white px-4 py-2 rounded hover:bg-white hover:text-blue-600 transition font-semibold w-full">
                 REQUEST INFO
               </button>
             </nav>
           </div>
         )}
 
-        {/* Secondary Navigation (Professional Navy Variant) */}
-        <nav className="hidden lg:flex bg-blue-800 justify-center gap-12 py-3 border-t border-blue-700 shadow-inner">
+        {/* Secondary Navigation (Soft Professional Blue matching gradient tones) */}
+        <nav className="hidden lg:flex bg-blue-500 justify-center gap-12 py-3 border-t border-blue-400">
           <a href="#" className="text-white hover:text-blue-200 transition font-semibold">
             About
           </a>

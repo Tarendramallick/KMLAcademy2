@@ -8,9 +8,10 @@ export default function Header() {
 
   return (
     <>
-      {/* Main Header */}
-      <header className="bg-gradient-to-r from-emerald-700 to-emerald-800 text-white sticky top-0 z-50">
+      {/* Main Header (Navy Blue) */}
+      <header className="bg-blue-900 text-white sticky top-0 z-50 shadow-md">
         <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+          
           {/* Logo */}
           <div className="flex items-center gap-3">
             <div className="w-12 h-12 border-2 border-white rounded-lg flex items-center justify-center font-bold text-xl">
@@ -18,73 +19,76 @@ export default function Header() {
             </div>
             <div className="hidden sm:block">
               <h1 className="text-2xl font-bold">KMLAcademy</h1>
-              <p className="text-xs text-emerald-100">Excellence in Education</p>
+              <p className="text-xs text-blue-200">Excellence in Education</p>
             </div>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-8">
-            <a href="#" className="text-white hover:text-emerald-100 transition">
+            <a href="#" className="text-white hover:text-blue-200 transition">
               Quicklinks
             </a>
-            <a href="#" className="text-white hover:text-emerald-100 transition">
+            <a href="#" className="text-white hover:text-blue-200 transition">
               Parent Login
             </a>
-            <a href="#" className="text-white hover:text-emerald-100 transition">
+            <a href="#" className="text-white hover:text-blue-200 transition">
               Giving
             </a>
-            <button className="border-2 border-white text-white px-4 py-2 rounded hover:bg-white hover:text-emerald-700 transition font-semibold">
+            <button className="border-2 border-white text-white px-4 py-2 rounded hover:bg-white hover:text-blue-900 transition font-semibold">
               REQUEST INFO
             </button>
-            <button className="p-2 hover:bg-emerald-600 rounded transition">
+            <button className="p-2 hover:bg-blue-800 rounded transition">
               <Search size={20} />
             </button>
           </nav>
 
           {/* Mobile Menu Button */}
-          <button onClick={() => setIsOpen(!isOpen)} className="lg:hidden p-2 hover:bg-emerald-600 rounded transition">
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="lg:hidden p-2 hover:bg-blue-800 rounded transition"
+          >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="lg:hidden bg-emerald-800 border-t border-emerald-600">
+          <div className="lg:hidden bg-blue-900 border-t border-blue-700">
             <nav className="flex flex-col gap-4 p-4">
-              <a href="#" className="text-white hover:text-emerald-100 transition">
+              <a href="#" className="text-white hover:text-blue-200 transition">
                 Quicklinks
               </a>
-              <a href="#" className="text-white hover:text-emerald-100 transition">
+              <a href="#" className="text-white hover:text-blue-200 transition">
                 Parent Login
               </a>
-              <a href="#" className="text-white hover:text-emerald-100 transition">
+              <a href="#" className="text-white hover:text-blue-200 transition">
                 Giving
               </a>
-              <button className="border-2 border-white text-white px-4 py-2 rounded hover:bg-white hover:text-emerald-700 transition font-semibold w-full">
+              <button className="border-2 border-white text-white px-4 py-2 rounded hover:bg-white hover:text-blue-900 transition font-semibold w-full">
                 REQUEST INFO
               </button>
             </nav>
           </div>
         )}
 
-        {/* Secondary Navigation */}
-        <nav className="hidden lg:flex bg-emerald-600 justify-center gap-12 py-3 border-t border-emerald-500">
-          <a href="#" className="text-white hover:text-emerald-100 transition font-semibold">
+        {/* Secondary Navigation (Professional Navy Variant) */}
+        <nav className="hidden lg:flex bg-blue-800 justify-center gap-12 py-3 border-t border-blue-700 shadow-inner">
+          <a href="#" className="text-white hover:text-blue-200 transition font-semibold">
             About
           </a>
-          <a href="#" className="text-white hover:text-emerald-100 transition font-semibold">
+          <a href="#" className="text-white hover:text-blue-200 transition font-semibold">
             Admissions
           </a>
-          <a href="#" className="text-white hover:text-emerald-100 transition font-semibold">
+          <a href="#" className="text-white hover:text-blue-200 transition font-semibold">
             Program
           </a>
-          <a href="#" className="text-white hover:text-emerald-100 transition font-semibold">
+          <a href="#" className="text-white hover:text-blue-200 transition font-semibold">
             Giving
           </a>
-          <a href="#" className="text-white hover:text-emerald-100 transition font-semibold">
+          <a href="#" className="text-white hover:text-blue-200 transition font-semibold">
             Parents
           </a>
-          <a href="#" className="text-white hover:text-emerald-100 transition font-semibold">
+          <a href="#" className="text-white hover:text-blue-200 transition font-semibold">
             Alumni
           </a>
         </nav>

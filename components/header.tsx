@@ -8,12 +8,18 @@ export default function Header() {
 
   return (
     <>
-      {/* Top Bar (Off White) */}
-      <div className="bg-[#F7F4EF] text-gray-800 py-2 border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 flex items-center justify-end gap-6 text-sm">
-          <a href="#" className="hover:text-orange-600 transition">Quicklinks</a>
-          <a href="#" className="hover:text-orange-600 transition">Parent Login</a>
-          <a href="#" className="hover:text-orange-600 transition">Giving</a>
+      {/* Top Bar */}
+      <div className="bg-gray-900 text-white text-sm py-2 px-4 flex justify-between items-center">
+        <div className="flex gap-4">
+          <a href="#" className="hover:text-gray-300">
+            facebook
+          </a>
+          <a href="#" className="hover:text-gray-300">
+            instagram
+          </a>
+          <a href="#" className="hover:text-gray-300">
+            linkedin
+          </a>
         </div>
       </div>
 

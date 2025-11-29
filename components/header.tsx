@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { Menu, X, Search } from "lucide-react"
+import Sponsors from "./sponsors"
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -11,15 +12,7 @@ export default function Header() {
       {/* Top Bar */}
       <div className="bg-gray-900 text-white text-sm py-2 px-4 flex justify-between items-center">
         <div className="flex gap-4">
-          <a href="#" className="hover:text-gray-300">
-            facebook
-          </a>
-          <a href="#" className="hover:text-gray-300">
-            instagram
-          </a>
-          <a href="#" className="hover:text-gray-300">
-            linkedin
-          </a>
+        <Sponsors />
         </div>
       </div>
 
